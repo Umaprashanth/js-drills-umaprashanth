@@ -6,6 +6,10 @@ import inventory from "./cars.js";
 // ("Car 33 is a *car year goes here* *car make goes here* *car model goes here*");
 
 function carInfo(data,id){
+
+    if (!Array.isArray(data)|| data.length==0){
+        return false
+    }
    if (id>data.length || id <=0 ){
     return false
    } 
@@ -19,11 +23,66 @@ function carInfo(data,id){
 // ("Last car is a *car make goes here* *car model goes here*");
 
 
+function lastCarInfo(data){
+    if(!Array.isArray(data) || data.length == 0){
+        console.log("Provide valid input")
+        return
+    }
+    let car = data[data.length-1]
+    console.log(`Last car is a ${car.car_make} ${car.car_model}`)
+}
+
+// ==== Problem #3 ====
+// The marketing team wants the car models listed alphabetically on the website. 
+// Execute a function to Sort all the car model names into alphabetical order and 
+// log the results in the console as it was returned.
+
+function sortingCarModels(data){
+
+    if (!Array.isArray(data)|| data.length ==0){
+        return "Invalid input" 
+    }
+
+    let arr = []
+    for (var i = 0; i<data.length;i++){
+        if (data[i]["car_model"]){
+        arr.push(data[i]["car_model"])
+    }
+}
+    arr.sort();
+    return arr
+}
+
+
+// ==== Problem #4 ====
+// The accounting team needs all the years from every car on the lot. 
+// Execute a function that will return an array from the dealer data containing only the car 
+// years and log the result in the console as it was returned.
+
+function yearsOfEveryCars(data){
+
+    if(!data || !Array.isArray(data) || data.length == 0){
+        return "input a valid data"
+    }
+
+    let arr = []
+    for (var i = 0; i<data.length; i++){
+        if (data[i]["car_year"]){
+        arr.push(data[i]["car_year"])
+    }
+}
+    return arr
+}
+
+
 
 
 
 
 export{
     carInfo,
+    lastCarInfo,
+    sortingCarModels,
+    yearsOfEveryCars
 
 }

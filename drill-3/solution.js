@@ -9,11 +9,7 @@ function carInfo(data,id){
    if (id>data.length || id <=0 ){
     return false
    } 
-    for (let i = 0; i<data.length; i++){
-        if (i == id){
-            return data[i]
-        }
-    }
+        return data[id-1]  
 }
 
 // // ==== Problem #2 ====

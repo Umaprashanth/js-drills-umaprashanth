@@ -1,5 +1,5 @@
-import inventory from "./cars.js";
-import {carInfo,lastCarInfo,sortingCarModels,yearsOfEveryCars} from "./solution.js"
+import inventory from "./cars.js"; 
+import {carInfo,lastCarInfo,sortingCarModels,yearsOfEveryCars,oldCars2000,BMWAndAudiCars} from "./solution.js"
 
 // var id = 53
 // var id = 1
@@ -48,3 +48,61 @@ import {carInfo,lastCarInfo,sortingCarModels,yearsOfEveryCars} from "./solution.
 // ]
 // console.log(yearsOfEveryCars());//"input a valid data"
 // console.log(yearsOfEveryCars("hello"));//"input a valid data"
+
+// console.log(oldCars2000(inventory));
+// console.log(oldCars2000(inventory).length)
+// [
+//     1983, 1990, 1995, 1987, 1996,
+//     1997, 1999, 1987, 1995, 1994,
+//     1985, 1997, 1992, 1993, 1964,
+//     1999, 1991, 1997, 1992, 1998,
+//     1965, 1996, 1995, 1996, 1999
+//   ]
+//   25
+  
+//   console.log(oldCars2000());// input a valid data
+// console.log(oldCars2000());// input a valid data
+
+// console.log(BMWAndAudiCars(inventory))
+// [
+//     {
+//       "id": 6,
+//       "car_make": "Audi",
+//       "car_model": "riolet",
+//       "car_year": 1995
+//     },
+//     {
+//       "id": 8,
+//       "car_make": "Audi",
+//       "car_model": "4000CS Quattro",
+//       "car_year": 1987
+//     },
+//     {
+//       "id": 25,
+//       "car_make": "BMW",
+//       "car_model": "525",
+//       "car_year": 2005
+//     },
+//     {
+//       "id": 30,
+//       "car_make": "BMW",
+//       "car_model": "6 Series",
+//       "car_year": 2010
+//     },
+//     {
+//       "id": 44,
+//       "car_make": "Audi",
+//       "car_model": "Q7",
+//       "car_year": 2012
+//     },
+//     {
+//       "id": 45,
+//       "car_make": "Audi",
+//       "car_model": "TT",
+//       "car_year": 2008
+//     }
+//   ]
+
+// console.log(BMWAndAudiCars());//input a valid data
+// console.log(BMWAndAudiCars("hello"));//input a valid data
+  

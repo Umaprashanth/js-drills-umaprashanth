@@ -75,14 +75,62 @@ function yearsOfEveryCars(data){
 }
 
 
+// ==== Problem #5 ====
+// The car lot manager needs to find out how many cars are older than the year 2000. 
+// Using the array you just obtained from the previous problem, 
+// find out how many cars were made before the year 2000 and return the array of older cars and log its length.
+
+
+function oldCars2000(data){
+
+    if(!data || !Array.isArray(data) || data.length == 0){
+        return "input a valid data"
+    }
+
+    let car = yearsOfEveryCars(data)
+    let newArr = []
+
+    for (var i = 0; i<car.length; i++){
+        if (car[i]<2000){
+            newArr.push(car[i])
+        }
+    }
+    return newArr
+}
 
 
 
+// ==== Problem #6 ====
+// A buyer is interested in seeing only BMW and Audi cars within the inventory.  
+// Execute a function and return an array that only contains BMW and Audi cars.  
+// Once you have the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
+
+
+function BMWAndAudiCars(data){
+
+    if(!data || !Array.isArray(data) || data.length == 0){
+        return "input a valid data"
+    }
+
+    let BMWAndAudi = []
+    for (var i = 0; i<data.length; i++){
+
+        if(data[i]["car_make"]){
+        if (data[i]["car_make"] == "BMW" || data[i]["car_make"] == "Audi"){
+            BMWAndAudi.push(data[i])
+        }
+        
+    }
+    }
+    return JSON.stringify(BMWAndAudi,null,2)
+
+}
 
 export{
     carInfo,
     lastCarInfo,
     sortingCarModels,
-    yearsOfEveryCars
-
+    yearsOfEveryCars,
+    oldCars2000,
+    BMWAndAudiCars
 }

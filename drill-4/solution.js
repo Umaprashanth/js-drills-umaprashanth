@@ -86,4 +86,4 @@ function flatten(elements) {
 
   const nestedArray = [1, [[2], [[3]]], [[[4]]]];
 
-  console.log(flatten(nestedArray));//[ 1, 2, 3, 4 ]
+//   console.log(flatten(nestedArray));//[ 1, 2, 3, 4 ]

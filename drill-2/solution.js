@@ -13,7 +13,7 @@ function usersInterestedInVideoGames(data) {
     if (
         typeof data[obj] === "object" && data[obj].interests && Array.isArray(data[obj].interests)
     ){
-    if (data[obj]["interests"][0].includes("Video Games")) {
+    if (data[obj][0].includes("Video Games")) {
       usersList.push(obj);
     }
   }
@@ -34,7 +34,7 @@ function usersInGermany(data) {
     if (
         typeof data[obj] === "object" && data[obj].nationality
     ){
-    if (data[obj]["nationality"].includes("Germany")) {
+    if (data[obj].nationality.includes("Germany")) {
       usersList.push(obj);
     }
   }
@@ -82,6 +82,7 @@ function designationBasedOnLanguage(data) {
   }
   return language;
 }
+// console.log(designationBasedOnLanguage(users));
 
 export {
     usersInterestedInVideoGames,

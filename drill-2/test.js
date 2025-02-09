@@ -12,7 +12,7 @@ var newData = []
 // console.log(usersInterestedInVideoGames()); //Please provide the data
 // console.log(usersInterestedInVideoGames(newData)); //[]
 
-// console.log(usersInGermany(users)); //[ 'Wanda', 'Pike' ]
+console.log(usersInGermany(users)); //[ 'Wanda', 'Pike' ]
 // console.log(usersInGermany()); //Please provide the data
 // console.log(usersInGermany(newData)); //[]
 // console.log(usersInGermany("hello")); //[]

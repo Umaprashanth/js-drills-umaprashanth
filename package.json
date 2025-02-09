@@ -1,0 +1,20 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umaprashanth/js-drills-umaprashanth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umaprashanth/js-drills-umaprashanth/issues"
+  },
+  "homepage": "https://github.com/Umaprashanth/js-drills-umaprashanth#readme",
+  "description": ""
+}
